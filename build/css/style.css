@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 48rem;
+  width: 92%;
+  padding: 0 4.2%;
+}
+body #btn-1,
+#btn-2,
+#btn-3 {
+  display: none;
+}
+.slider-wrapper {
+  margin: 0 auto;
+  padding: 0 2.3%;
+  min-width: 1024px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-transition: background-image 0.5s ease;
+  -moz-transition: background-image 0.5s ease;
+  transition: background-image 0.5s ease;
+}
+.slide,
+.slide-title {
+  display: none;
+}
+.slider {
+  position: relative;
+  padding-top: 55px;
+  margin-right: 22px;
+  text-align: center;
+}
+.slider-controls label {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 2rem;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #e4dacf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-controls {
+  position: absolute;
+  bottom: -2.1875rem;
+  left: 45%;
+  z-index: 20;
+  font-size: 0;
+}
+.slider-controls label:hover {
+  background-color: #ec2e2e;
+}
+.slider-controls label:active {
+  background-color: #e4dacf;
+}
+#btn-1:checked ~ .slider-wrapper #slide1,
+#btn-2:checked ~ .slider-wrapper #slide2,
+#btn-3:checked ~ .slider-wrapper #slide3 {
+  display: block;
+}
+#btn-1:checked ~ .slider-wrapper {
+  background: url("../img/banner1-bg.png") no-repeat center;
+}
+#btn-2:checked ~ .slider-wrapper,
+#btn-3:checked ~ .slider-wrapper  {
+  background-image: url("../img/banner2-bg.png");
+  background-position-y: 15%;
+}
+#btn-1:checked ~ .slider-wrapper label[for="btn-1"],
+#btn-2:checked ~ .slider-wrapper label[for="btn-2"],
+#btn-3:checked ~ .slider-wrapper label[for="btn-3"] {
+  background-color: #ffffff;
+}
+.action-description {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    color: #000;
+    width: 30%;
+    margin-left: 16%;
+    text-align: left;
+}
+.action-description p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.action-title {
+    font-size: 3.125rem;
+    line-height: 3.3rem;
+    font-weight: bold;
+}
+.price-element {
+    width: 12.6875rem;
+    height: 12.6875rem;
+    background: url("../img/price.png") no-repeat center;
+    position: absolute;
+    bottom: -61px;
+    right: 209px;
+}

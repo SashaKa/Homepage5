@@ -1,0 +1,109 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+.container {
+    margin: 0 auto;
+    max-width: 48rem;
+    width: 92%;
+    padding: 0 4.2%;
+}
+body #btn-1,
+#btn-2,
+#btn-3 {
+    display: none;
+}
+.slider-wrapper {
+    margin: 0 auto;
+    padding: 0 2.3%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    -webkit-transition: background-image 0.5s ease;
+    transition: background-image 0.5s ease;
+}
+
+.slide, .slide-title {
+    display: none;
+}
+.slider {
+    position: relative;
+    padding-top: 55px;
+    margin-right: 22px;
+    text-align: center;
+
+}
+.slider-controls label {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: top;
+    background-color: transparent;
+    border: 2px solid #e4dacf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider-controls {
+    position: absolute;
+    bottom: -2.1875rem;
+    left: 50%;
+    z-index: 20;
+    font-size: 0;
+}
+.slider-controls label:hover {
+    background-color: #ec2e2e;
+}
+.slider-controls label:active {
+    background-color: #e4dacf;
+}
+#btn-1:checked ~ .slider-wrapper #slide1,
+#btn-2:checked ~ .slider-wrapper #slide2,
+#btn-3:checked ~ .slider-wrapper #slide3 {
+    display: block;
+}
+#btn-1:checked ~ .slider-wrapper,
+#btn-3:checked ~ .slider-wrapper {
+    background-image: url("../img/banner1-bg.png");
+}
+#btn-2:checked ~ .slider-wrapper {
+    background-image: url("../img/banner2-bg.png");
+    background-position-y: 9%;
+}
+
+#btn-1:checked ~ .slider-wrapper label[for="btn-1"],
+#btn-2:checked ~ .slider-wrapper label[for="btn-2"],
+#btn-3:checked ~ .slider-wrapper label[for="btn-3"] {
+    background-color: #ffffff;
+}
+.action-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #000;
+    width: 30%;
+    margin-left: 16%;
+}
+.action-description p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.action-title {
+    font-size: 3.125rem;
+    line-height: 3.3rem;
+    font-weight: bold;
+}
+
+.price-element {
+    width: 12.6875rem;
+    background: url(../img/price.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
