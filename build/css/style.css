@@ -29,7 +29,7 @@ body #btn-1,
 }
 .slider-wrapper {
   margin: 0 auto;
-  padding: 0 2.3%;
+  padding: 2.25rem 14.2%;
   min-width: 100%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -59,7 +59,7 @@ body #btn-1,
 }
 .slider-controls {
   position: absolute;
-  bottom: -2.1875rem;
+  bottom: -8.1875rem;
   left: 50%;
   z-index: 20;
   font-size: 0;
@@ -77,11 +77,13 @@ body #btn-1,
 }
 #btn-1:checked ~ .slider-wrapper,
 #btn-3:checked ~ .slider-wrapper {
-  background-image: url("../img/banner1-bg.png");
+  background: #ecdfd3 url("../img/pic_chicken.png") no-repeat;
+  background-position: 70% 1.625rem;
 }
 #btn-2:checked ~ .slider-wrapper {
-  background-image: url("../img/banner2-bg.png");
-  background-position-y: 9%;
+  background: #f6dcbd url("../img/bannerjp-bg.jpg") no-repeat;
+  background-position: right;
+
 }
 #btn-1:checked ~ .slider-wrapper label[for="btn-1"],
 #btn-2:checked ~ .slider-wrapper label[for="btn-2"],
@@ -106,7 +108,7 @@ body #btn-1,
   justify-content: space-around;
   color: #000;
   width: 30%;
-  margin-left: 16%;
+  text-align:left;
 }
 .action-description p {
   font-size: 1.25rem;
@@ -119,13 +121,30 @@ body #btn-1,
 }
 .price-element {
   width: 12.6875rem;
-  background: url(../img/price.png);
+  height: 12.6875rem;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -9rem;
+ right: -2rem;
+}
+#slide1 .price-element {
+    background: url(../img/price.png) no-repeat center;
+}
+#slide2 .price-element,
+#slide3 .price-element {
+    background-color: #52d05d;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 3.375rem;
+    width: 12.75rem;
+    height: 12.75rem;
+    bottom: -7rem;
+    right: -11rem;
+    font-weight: 600;
+    padding: 5.1rem 1rem;
+    position: absolute;
+
 }
 /*-----------------navigation-----------------------*/
-
 .total-menu {
     background-color: #cb1717;
 }
@@ -137,17 +156,23 @@ body #btn-1,
     flex-direction: row;
     width: 100%;
 }
-.mobile-menu-list,
-.overall-menu-list {
+
+.overall-menu-list  {
+    width: 47.3645%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
-.total-menu .container,
-.logo-menu .container {
+.mobile-menu-list {
+    width: 31.9180%;
+    display: flex;
+    flex-direction: row;
+}
+.total-menu .container li,
+.logo-menu .container li  {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .search,
 .login-form {
