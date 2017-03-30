@@ -317,3 +317,152 @@ body #btn-1,
 .social .social-btn:hover {
   color: #fff;
 }
+/*---------------recipes------------------*/
+.recipes .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 4.5625rem;
+  padding-bottom: 3.125rem;
+  background: -webkit-linear-gradient(top, #feffff, #f8fafc);
+  background: -moz-linear-gradient(top, #feffff, #f8fafc);
+  background: linear-gradient(to bottom, #feffff, #f8fafc);
+}
+.wrap-title {
+  -webkit-flex-shrink: 0 1;
+  -ms-flex-negative: 0 1;
+  flex-shrink: 0 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 2rem;
+}
+.number-recipes {
+  color: #ec2d2d;
+  font-size: 1.125rem;
+}
+.title-article {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+}
+.recipes-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 2 ;
+  -moz-box-flex: 0;
+  -ms-flex: 0 2 ;
+  flex: 0 2 ;
+  margin-top: 2rem;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 351px;
+  box-shadow: 1px 3px 14px -2px rgba(0, 0, 0, 0.35);
+}
+.recipes-wrap:hover .assortment-link {
+  background-color: #ec2d2d;
+  color: #fff;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.wrap-description-recipe {
+  padding: 1rem;
+  position: relative;
+}
+.recipes-price {
+  position: absolute;
+  background-color: #52d05d;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 1.7rem 1rem;
+  top: -60px;
+  right: 24px;
+}
+.teg-recipes-type {
+  margin-left: 2rem;
+}
+.teg-recipes-type::before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 28px;
+  top: 12px;
+  left: 13px;
+}
+.meat-teg::before {
+  background: url("../img/burger.png") no-repeat center;
+}
+.veg-teg::before {
+  background: url("../img/leaf.png") no-repeat center;
+}
+.breakfast-teg::before {
+  background: url("../img/egg.png") no-repeat center;
+}
+.time-cooking {
+  color: #a0a0a0;
+}
+.time-cooking .fa {
+  padding-right: 0.5rem;
+}
+.assortment-link {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0;
+  flex: 0 0;
+  color: #ec2d2d;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding: 20px 80px;
+  margin-top: auto;
+}
