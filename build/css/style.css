@@ -426,8 +426,12 @@ body #btn-1,
   flex-direction: column;
   background-color: #fff;
   border-radius: 15px;
-  width: 381px;
+  flex-basis: 381px;
   box-shadow: 1px 3px 14px -2px rgba(0, 0, 0, 0.35);
+}
+.recipes-photo {
+    width: 100%;
+    height: auto;
 }
 .recipes-wrap:hover .assortment-link {
   background-color: #ec2d2d;
@@ -498,15 +502,16 @@ body #btn-1,
 }
 /*---------brands--------------------*/
 .brands {
-    padding: 5rem;
+    padding: 2rem;
+    padding-bottom: 4rem;
 }
 .brands .container {
     display: flex;
     justify-content: space-between;
 }
 .brand-logo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     color: #fff;
     font-weight: 600;
@@ -514,7 +519,8 @@ body #btn-1,
     padding: 1.5rem 2rem;
 }
 .brand-logo:last-child {
-    padding: 1.8rem 1.3rem;
+    padding: 2.5rem 1.3rem;
+    font-size: 1.75rem;
     background-color: #ec2d2d;
 }
 /*------------------banner----------------*/
@@ -533,10 +539,14 @@ body #btn-1,
     justify-content: space-around;
 }
 .registration-wrap{
-    width: 40%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     color: #fff;
+}
+.registration-title {
+    font-size: 2.7rem;
+    margin-bottom: 0.5rem;
 }
 .card-wrap {
     flex: 0 1;
@@ -548,7 +558,7 @@ body #btn-1,
 .registration-btn {
     background-color: transparent;
     border: 1px solid #fff;
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 2rem;
     border-radius: 32px;
     align-self: flex-start;
     color: #fff;
@@ -613,6 +623,22 @@ footer .container {
     }
     .recipes-wrap {
         border-radius: 15px;
-        width: 304px;
+        flex-basis: 304px;
+        margin-top: 1.4rem;
     }
+
+    .recipes-title{
+        font-size: 1.1rem;
+        margin-top: 3px;
+        margin-bottom: 10px;
+    }
+    .assortment-link {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 9px 68px;
+        padding-top: 7px;
+    }
+    .brands {
+        padding: 2rem;
+}
 }
