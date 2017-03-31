@@ -582,3 +582,37 @@ footer .container {
     padding-top: 1.2rem;
     color: darkgrey;
 }
+
+/*-------------media quaris-----------*/
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+    .overall-menu-list {
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0.5rem 0px;
+    }
+    .mobile-menu-list {
+        padding-top: 0.7rem;
+        padding-left: 3.5rem;
+    }
+    .slider-wrapper {
+        padding: 2.5rem 3%;
+    }
+    #btn-1:checked ~ .slider-wrapper, #btn-3:checked ~ .slider-wrapper {
+        background-position: 87% 3.625rem;
+}
+    .social {
+        margin-top: 1.2rem;
+        width: 18%;
+    }
+    .slider-controls{
+        bottom: -6rem;
+        left: 45.6%;
+    }
+    .recipes-wrap {
+        border-radius: 15px;
+        width: 304px;
+    }
+}
