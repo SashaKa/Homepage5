@@ -30,38 +30,50 @@
                 <div class="phone-number">8-800-555-55-05</div>
             </div>
         </div>
-            <div class="logo-menu">
-                <div class="container">
-                    <img src="img/logo.png" alt="Pyaterochka" class="main-logo"width="165"height="36">
-                    <ul class="mobile-menu-list">
-                        <li><a href="#" class="mobile-link">Покупателям</a></li>
-                        <li><a href="#" class="mobile-link">Партнерам</a></li>
-                        <li><a href="#" class="mobile-link">Карьера</a></li>
-                    </ul>
-                    <div class="user-block">
-                        <div class="search-wrap">
-                            <button class="fa fa-search"></button>
-                            <form class="search" action="#" method="get">
-                            <fieldset class="search-form">
-                                <input class="input-field" id="search" type="search" name="search" placeholder="Что ищем?">
-                                <label class="top-placeholder" for="search">Что ищем?</label>
-                            </fieldset>
-                            <button class="user-btn search-btn" type="submit"></button>
+        <div class="logo-menu">
+            <div class="container">
+                <img src="img/logo.png" alt="Pyaterochka" class="main-logo"width="165"height="36">
+                <ul class="mobile-menu-list">
+                    <li><a href="#" class="mobile-link">Покупателям</a></li>
+                    <li><a href="#" class="mobile-link">Партнерам</a></li>
+                    <li><a href="#" class="mobile-link">Карьера</a></li>
+                </ul>
+                <div class="user-block">
+                    <div class="search-wrap">
+                        <button class="fa fa-search"></button>
+                        <form class="search" action="#" method="get">
+                        <fieldset class="search-form">
+                            <input class="input-field" id="search" type="search" name="search" placeholder="Что ищем?">
+                            <label class="top-placeholder" for="search">Что ищем?</label>
+                        </fieldset>
+                        <button class="user-btn search-btn" type="submit"></button>
+                    </form>
+                    </div>
+                    <div class="login">
+                        <a class="user-btn login-btn" href="#">Войти</a>
+                        <form class="login-form" action="#" method="post">
+                            <input class="input-field" id="email" type="email" name="email" placeholder="Электронная почта">
+                            <label class="top-placeholder" for="email">Электронная почта</label>
+                            <input class="input-field" id="password" type="password" name="password" placeholder="Пароль">
+                            <label class="top-placeholder" for="password">Пароль</label>
+                            <button class="btn login-form-btn" type="submit">Войти</button>
                         </form>
-                        </div>
-                        <div class="login">
-                            <a class="user-btn login-btn" href="#">Войти</a>
-                            <form class="login-form" action="#" method="post">
-                                <input class="input-field" id="email" type="email" name="email" placeholder="Электронная почта">
-                                <label class="top-placeholder" for="email">Электронная почта</label>
-                                <input class="input-field" id="password" type="password" name="password" placeholder="Пароль">
-                                <label class="top-placeholder" for="password">Пароль</label>
-                                <button class="btn login-form-btn" type="submit">Войти</button>
-                            </form>
-                        </div>
+                    </div>
+                </div>
+                <div class="burger-menu">
+                    <div class="burger">
+                        <ul class="burger-menu-list">
+                            <li><a href="#" class="total-link">О компании</a></li>
+                            <li><a href="#" class="total-link">Акции</a></li>
+                            <li><a href="#" class="total-link">Магазины</a></li>
+                            <li><a href="#" class="total-link">Новости</a></li>
+                            <li><a href="#" class="total-link">Товары</a></li>
+                            <li><a href="#" class="total-link">Напишите нам </a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </div>
     </header>
     <input type="radio" id="btn-1" name="toggle" checked>
     <input type="radio" id="btn-2" name="toggle">
@@ -216,5 +228,19 @@
             </section>
         </div>
     </footer>
+    <script type="text/javascript">
+        const hamburger = document.querySelector('.burger-menu')
+        const mobileMenu = document.querySelector ('.burger-menu-list')
+
+        hamburger.addEventListener('click', () => {
+            if (!hamburger.classList.contains('menu-on')) {
+                hamburger.classList.add('menu-on')
+                mobileMenu.classList.add('mobile-menu-on')
+            } else if (hamburger.classList.contains('menu-on')) {
+                hamburger.classList.remove('menu-on')
+                mobileMenu.classList.remove('mobile-menu-on')
+            }
+        })
+    </script>
 </body>
 </html>

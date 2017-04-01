@@ -394,3 +394,272 @@ body #btn-1,
         margin-bottom: 1rem;
         font-size: @large;
 }
+.brands {
+    padding: 2rem;
+    padding-bottom: 4rem;
+}
+.brands .container {
+    display: flex;
+    justify-content: space-between;
+}
+.brand-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 600;
+    background-color: rgba(128, 128, 128, 0.41);
+    padding: 1.5rem 2rem;
+}
+.brand-logo:last-child {
+    padding: 2.5rem 1.3rem;
+    font-size: 1.75rem;
+    background-color: @5red;
+}
+/*------------------banner----------------*/
+.banner-shops {
+    background: url("../img/5100.jpg") no-repeat center;
+    height: 18rem;
+}
+/*-----------------card-registration---------*/
+.card-registration {
+    background-color: @5red;
+    padding: 2rem 0;
+
+}
+.card-registration .container {
+    display: flex;
+    justify-content: space-around;
+}
+.registration-wrap{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.registration-title {
+    font-size: 2.7rem;
+    margin-bottom: 0.5rem;
+}
+.card-wrap {
+    flex: 0 1;
+    padding-bottom: 4rem;
+    padding-right: 12rem;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.registration-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 1.2rem 2rem;
+    border-radius: 32px;
+    align-self: flex-start;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+.registration-btn:hover {
+    background-color: #fff;
+    color: #ec2d2d;
+}
+/*--------------footer---------------*/
+footer{
+    background-color: grey;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+}
+.footer-menu-link {
+    color: darkgrey;
+}
+.sub-footer-link{
+    color: #fff;
+}
+.footer-contacts {
+    width: 38rem;
+    padding-top: 1.2rem;
+    color: darkgrey;
+}
+/*-----responsive-menu---------------*/
+.burger-menu {
+    display:none;
+    position: relative;
+    width: 41px;
+    height: 41px;
+    cursor: pointer;
+}
+.burger {
+    position: absolute;
+    background: @white;
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    right: 0px;
+    margin-top: -5px;
+    opacity: 1;
+}
+.burger::before {
+    position: absolute;
+    background: @white;
+    width: 41px;
+    height: 5px;
+    top: 20px;
+    content: "";
+    display: block;
+}
+.burger::after {
+    position: absolute;
+    background: @white;
+    width: 41px;
+    height: 5px;
+    bottom: 20px;
+    content: "";
+    display: block;
+}
+.burger::after, .burger::before, .burger {
+      transition: all .3s ease-in-out;
+      -webkit-transition: all .3s ease-in-out;
+}
+.burger-menu.menu-on .burger::after{
+       transform: rotate(-45deg);
+       -webkit-transform: rotate(-45deg);
+      bottom: 0px;
+}
+.burger-menu.menu-on .burger::before{
+       transform: rotate(45deg);
+       -webkit-transform: rotate(45deg);
+      top: 0px;
+}
+.burger-menu.menu-on .burger{
+     background: rgba(111,111,111,.0);
+}
+.burger-menu-list {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 2rem;
+    left: -20rem;
+    background-color: rgba(97, 97, 97, 0.93);
+    width: 23rem;
+    position: absolute;
+    height: auto;
+    -webkit-animation: showme 1s;
+            animation: showme 1s;
+}
+.mobile-menu-on {
+    display: block;
+}
+@-webkit-keyframes showme {
+    50% {-webkit-transform: translateX(50%);transform: translateX(50%)}
+}
+@keyframes showme {
+    50% {-webkit-transform: translateX(50%);transform: translateX(50%)}
+
+}
+/*------------screen>1024px-----------*/
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+    .overall-menu-list {
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0.5rem 0px;
+    }
+    .mobile-menu-list {
+        padding-top: 0.7rem;
+        padding-left: 3.5rem;
+    }
+    .slider-wrapper {
+        padding: 2.5rem 3%;
+    }
+    #btn-1:checked ~ .slider-wrapper, #btn-3:checked ~ .slider-wrapper {
+        background-position: 87% 3.625rem;
+}
+    .social {
+        margin-top: 1.2rem;
+        width: 18%;
+    }
+    .slider-controls{
+        bottom: -6rem;
+        left: 45.6%;
+    }
+    .recipes-wrap {
+        border-radius: 15px;
+        flex-basis: 304px;
+        margin-top: 1.4rem;
+    }
+
+    .recipes-title{
+        font-size: 1.1rem;
+        margin-top: 3px;
+        margin-bottom: 10px;
+    }
+    .assortment-link {
+        font-size: @small;
+        line-height: 1.5rem;
+        padding: 9px 68px;
+        padding-top: 7px;
+    }
+    .brands {
+        padding: 2rem;
+    }
+}
+@media screen and (max-width:960px) {
+    .overall-menu-list li,
+    .mobile-menu-list li {
+        padding-right: 1.125rem;
+    }
+    .mobile-menu-list {
+        padding-left: @midi;
+    }
+
+}
+@media screen and (max-width: 860px) {
+    .overall-menu-list li {
+        padding-right: 1rem;
+    }
+    .total-link{
+        font-size: 0.8rem;
+    }
+    .login-btn {
+        font-size: @small;
+        margin-left: @small;
+    }
+
+}
+/*------------------screen>640px---------------------*/
+@media screen and (max-width: 740px) {
+    .container {
+        width: 99%;
+    }
+    .total-menu,
+    .login-btn  {
+        display: none;
+    }
+    button .fa-search {
+        font-size: 3rem;
+    }
+
+    .logo-menu .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .mobile-menu-list {
+        order: 2;
+    }
+    .burger-menu {
+        display: block;
+    }
+
+}
+@media screen and (max-width: 750px) {
+
+}

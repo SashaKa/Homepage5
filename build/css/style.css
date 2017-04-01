@@ -426,12 +426,8 @@ body #btn-1,
   flex-direction: column;
   background-color: #fff;
   border-radius: 15px;
-  flex-basis: 381px;
+  width: 381px;
   box-shadow: 1px 3px 14px -2px rgba(0, 0, 0, 0.35);
-}
-.recipes-photo {
-    width: 100%;
-    height: auto;
 }
 .recipes-wrap:hover .assortment-link {
   background-color: #ec2d2d;
@@ -500,145 +496,348 @@ body #btn-1,
   margin-bottom: 1rem;
   font-size: 1.5625rem;
 }
-/*---------brands--------------------*/
 .brands {
-    padding: 2rem;
-    padding-bottom: 4rem;
+  padding: 2rem;
+  padding-bottom: 4rem;
 }
 .brands .container {
-    display: flex;
-    justify-content: space-between;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .brand-logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    color: #fff;
-    font-weight: 600;
-    background-color: rgba(128, 128, 128, 0.41);
-    padding: 1.5rem 2rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 600;
+  background-color: rgba(128, 128, 128, 0.41);
+  padding: 1.5rem 2rem;
 }
 .brand-logo:last-child {
-    padding: 2.5rem 1.3rem;
-    font-size: 1.75rem;
-    background-color: #ec2d2d;
+  padding: 2.5rem 1.3rem;
+  font-size: 1.75rem;
+  background-color: #ec2d2d;
 }
 /*------------------banner----------------*/
 .banner-shops {
-    background: url("../img/5100.jpg") no-repeat center;
-    height: 18rem;
+  background: url("../img/5100.jpg") no-repeat center;
+  height: 18rem;
 }
 /*-----------------card-registration---------*/
 .card-registration {
-    background-color: #ec2d2d;
-    padding: 2rem 0;
-
+  background-color: #ec2d2d;
+  padding: 2rem 0;
 }
 .card-registration .container {
-    display: flex;
-    justify-content: space-around;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
-.registration-wrap{
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
+.registration-wrap {
+  width: 55%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #fff;
 }
 .registration-title {
-    font-size: 2.7rem;
-    margin-bottom: 0.5rem;
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
 }
 .card-wrap {
-    flex: 0 1;
-    padding-bottom: 4rem;
-    padding-right: 12rem;
-    background-color: #fff;
-    border-radius: 15px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1;
+  -moz-box-flex: 0;
+  -ms-flex: 0 1;
+  flex: 0 1;
+  padding-bottom: 4rem;
+  padding-right: 12rem;
+  background-color: #fff;
+  border-radius: 15px;
 }
 .registration-btn {
-    background-color: transparent;
-    border: 1px solid #fff;
-    padding: 1.2rem 2rem;
-    border-radius: 32px;
-    align-self: flex-start;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 1.2rem 2rem;
+  border-radius: 32px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
 }
 .registration-btn:hover {
-    background-color: #fff;
-    color: #ec2d2d;
+  background-color: #fff;
+  color: #ec2d2d;
 }
 /*--------------footer---------------*/
-footer{
-    background-color: grey;
+footer {
+  background-color: grey;
 }
 footer .container {
-    display: flex;
-    justify-content: space-between;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .footer-menu {
-    display: flex;
-    flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 .footer-menu-link {
-    color: darkgrey;
+  color: darkgrey;
 }
-.sub-footer-link{
-    color: #fff;
+.sub-footer-link {
+  color: #fff;
 }
 .footer-contacts {
-    width: 38rem;
-    padding-top: 1.2rem;
-    color: darkgrey;
+  width: 38rem;
+  padding-top: 1.2rem;
+  color: darkgrey;
 }
-
-/*-------------media quaris-----------*/
+/*-----responsive-menu---------------*/
+.burger-menu {
+  display: none;
+  position: relative;
+  width: 41px;
+  height: 41px;
+  cursor: pointer;
+}
+.burger {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 5px;
+  top: 50%;
+  right: 0px;
+  margin-top: -5px;
+  opacity: 1;
+}
+.burger::before {
+  position: absolute;
+  background: #fff;
+  width: 41px;
+  height: 5px;
+  top: 20px;
+  content: "";
+  display: block;
+}
+.burger::after {
+  position: absolute;
+  background: #fff;
+  width: 41px;
+  height: 5px;
+  bottom: 20px;
+  content: "";
+  display: block;
+}
+.burger::after,
+.burger::before,
+.burger {
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.burger-menu.menu-on .burger::after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  bottom: 0px;
+}
+.burger-menu.menu-on .burger::before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: 0px;
+}
+.burger-menu.menu-on .burger {
+  background: rgba(111, 111, 111, 0);
+}
+.burger-menu-list {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  top: 2rem;
+  left: -20rem;
+  background-color: rgba(97, 97, 97, 0.93);
+  width: 23rem;
+  position: absolute;
+  height: auto;
+  -webkit-animation: showme 1s;
+  -moz-animation: showme 1s;
+  animation: showme 1s;
+}
+.mobile-menu-on {
+  display: block;
+}
+@-webkit-keyframes showme {
+  50% {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+}
+@-moz-keyframes showme {
+  50% {
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+}
+@keyframes showme {
+  50% {
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+}
+/*------------screen>1024px-----------*/
 @media screen and (max-width: 1024px) {
-    .container {
-        width: 95%;
-    }
-    .overall-menu-list {
-        margin-right: 0;
-        margin-bottom: 0;
-        padding: 0.5rem 0px;
-    }
-    .mobile-menu-list {
-        padding-top: 0.7rem;
-        padding-left: 3.5rem;
-    }
-    .slider-wrapper {
-        padding: 2.5rem 3%;
-    }
-    #btn-1:checked ~ .slider-wrapper, #btn-3:checked ~ .slider-wrapper {
-        background-position: 87% 3.625rem;
+  .container {
+    width: 95%;
+  }
+  .overall-menu-list {
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0.5rem 0px;
+  }
+  .mobile-menu-list {
+    padding-top: 0.7rem;
+    padding-left: 3.5rem;
+  }
+  .slider-wrapper {
+    padding: 2.5rem 3%;
+  }
+  #btn-1:checked ~ .slider-wrapper,
+  #btn-3:checked ~ .slider-wrapper {
+    background-position: 87% 3.625rem;
+  }
+  .social {
+    margin-top: 1.2rem;
+    width: 18%;
+  }
+  .slider-controls {
+    bottom: -6rem;
+    left: 45.6%;
+  }
+  .recipes-wrap {
+    border-radius: 15px;
+    -webkit-flex-basis: 304px;
+    -ms-flex-preferred-size: 304px;
+    flex-basis: 304px;
+    margin-top: 1.4rem;
+  }
+  .recipes-title {
+    font-size: 1.1rem;
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+  .assortment-link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 9px 68px;
+    padding-top: 7px;
+  }
+  .brands {
+    padding: 2rem;
+  }
 }
-    .social {
-        margin-top: 1.2rem;
-        width: 18%;
-    }
-    .slider-controls{
-        bottom: -6rem;
-        left: 45.6%;
-    }
-    .recipes-wrap {
-        border-radius: 15px;
-        flex-basis: 304px;
-        margin-top: 1.4rem;
-    }
-
-    .recipes-title{
-        font-size: 1.1rem;
-        margin-top: 3px;
-        margin-bottom: 10px;
-    }
-    .assortment-link {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        padding: 9px 68px;
-        padding-top: 7px;
-    }
-    .brands {
-        padding: 2rem;
+@media screen and (max-width: 960px) {
+  .overall-menu-list li,
+  .mobile-menu-list li {
+    padding-right: 1.125rem;
+  }
+  .mobile-menu-list {
+    padding-left: 1.25rem;
+  }
 }
+@media screen and (max-width: 860px) {
+  .overall-menu-list li {
+    padding-right: 1rem;
+  }
+  .total-link {
+    font-size: 0.8rem;
+  }
+  .login-btn {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+}
+/*------------------screen>640px---------------------*/
+@media screen and (max-width: 740px) {
+  .container {
+    width: 99%;
+  }
+  .total-menu,
+  .login-btn {
+    display: none;
+  }
+  button .fa-search {
+    font-size: 3rem;
+  }
+  .logo-menu .container {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .mobile-menu-list {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .burger-menu {
+    display: block;
+  }
 }
