@@ -639,7 +639,7 @@ footer .container {
   display: none;
   position: relative;
   width: 41px;
-  height: 41px;
+  height: 55px;
   cursor: pointer;
 }
 .burger {
@@ -657,7 +657,7 @@ footer .container {
   background: #fff;
   width: 41px;
   height: 5px;
-  top: 20px;
+  top: 16px;
   content: "";
   display: block;
 }
@@ -666,7 +666,7 @@ footer .container {
   background: #fff;
   width: 41px;
   height: 5px;
-  bottom: 20px;
+  bottom: 16px;
   content: "";
   display: block;
 }
@@ -809,16 +809,13 @@ footer .container {
   }
 }
 /*------------------screen>640px---------------------*/
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 750px) {
   .container {
     width: 99%;
   }
   .total-menu,
   .login-btn {
     display: none;
-  }
-  button .fa-search {
-    font-size: 3rem;
   }
   .logo-menu .container {
     -webkit-flex-wrap: wrap;
@@ -830,14 +827,63 @@ footer .container {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+  .burger-menu {
+    display: block;
+    margin-left: 4rem;
+    margin-right: 2rem;
+  }
   .mobile-menu-list {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -moz-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
   }
-  .burger-menu {
-    display: block;
+  .main-logo {
+    margin: 1.6rem 0;
+    margin-left: 1.3rem;
+    width: 50%;
+    height: 50%;
+  }
+  .user-block {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin: auto;
+  }
+  .user-block .fa-search {
+    font-size: 3rem;
+  }
+  .mobile-link {
+    font-size: 1.75rem;
+    padding: 1rem;
+  }
+  .action-description {
+    width: 91%;
+  }
+  .date-of-action,
+  .action-annnotaition {
+    padding: 0;
+  }
+  .action-title {
+    font-size: 2.75rem;
+    line-height: 2.425rem;
+    font-weight: bold;
+  }
+  #btn-1:checked ~ .slider-wrapper,
+  #btn-3:checked ~ .slider-wrapper {
+    background-position: 50% 13.625rem;
+  }
+  .slider-wrapper {
+    padding: 11.5rem 3%;
+  }
+  .price-element {
+    bottom: -17.8rem;
+    right: -0.3rem;
   }
 }
