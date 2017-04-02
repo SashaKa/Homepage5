@@ -74,10 +74,11 @@ body #btn-1,
   font-size: 0;
 }
 .slider-controls label:hover {
-  background-color: @5red;
+  background-color: @dark-red;
 }
 .slider-controls label:active {
-  background-color: #e4dacf;
+  background-color: @5red;
+  border: 2px solid @5red;
 }
 #btn-1:checked ~ .slider-wrapper #slide1,
 #btn-2:checked ~ .slider-wrapper #slide2,
@@ -97,7 +98,7 @@ body #btn-1,
 #btn-1:checked ~ .slider-wrapper label[for="btn-1"],
 #btn-2:checked ~ .slider-wrapper label[for="btn-2"],
 #btn-3:checked ~ .slider-wrapper label[for="btn-3"] {
-  background-color: #ffffff;
+  background-color: @5red;
 }
 .action-description {
   display: -webkit-box;
@@ -157,10 +158,7 @@ body #btn-1,
     font-weight: 600;
     padding: 5.1rem 1rem;
     position: absolute;
-
 }
-
-
 /*-----------------navigation-----------------------*/
 .logo-menu, .total-menu {
     width: 100%;
@@ -680,28 +678,76 @@ footer .container {
     }
     .action-description {
         width: 91%;
+        margin-left: 0.7rem;
     }
     .date-of-action,
-    .action-annnotaition
-     {
+    .action-annnotaition {
         padding: 0;
     }
     .action-title {
-    font-size: 2.75rem;
-    line-height: 2.425rem;
-    font-weight: bold;
+        font-size: 2.75rem;
+        line-height: 3rem;
+        font-weight: bold;
     }
     #btn-1:checked ~ .slider-wrapper, #btn-3:checked ~ .slider-wrapper {
-    background-position: 50% 13.625rem;
+        background-position: 50% 13.625rem;
+    }
+    #btn-2:checked ~ .slider-wrapper {
+        background: -webkit-linear-gradient(rgba(250, 238, 218, 0), rgb(250, 239, 218)), url(../img/bannerjp-bg.jpg) no-repeat;
+        background: -o-linear-gradient(rgba(250, 238, 218, 0), rgb(250, 239, 218)), url(../img/bannerjp-bg.jpg) no-repeat;
+        background: linear-gradient(rgba(250, 238, 218, 0), rgb(250, 239, 218)), url(../img/bannerjp-bg.jpg) no-repeat;
+        background-position: 55% 11rem;
+    }
+    #slide2 .price-element {
+        bottom: -28rem;
+        right: -1rem;
     }
     .slider-wrapper {
-    padding: 11.5rem 3%;
+        padding: 11.5rem 3%;
+        padding-top: 1rem;
+        padding-bottom: 23.7rem;
     }
     .price-element {
-        bottom: -17.8rem;
-    right: -0.3rem;
+        bottom: -29.8rem;
+        right: -0.4rem;
     }
-
+    .slider-controls {
+        bottom: -22.7rem;
+        left: 2.2%;
+    }
+    .social .social-btn-vk {
+        padding-top: 1.4rem;
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+        padding-bottom: 1rem;
+        font-size: 1.8rem;
+        margin-left: 1.4rem;
+    }
+    .social .social-btn-ok {
+        padding: 1rem 1.5rem;
+        margin-left: 1.8rem;
+        font-size: 2.2rem;
+        margin-right: 2rem;
+        margin-top: 0.3rem;
+        padding-left: 1.3rem;
+    }
+    .social .social-btn-mail {
+        padding-top: 1rem;
+        padding-bottom: 0.6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 2.5rem;
+    }
+    .wrap-title {
+        width: 96%;
+    }
+    .number-recipes {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+    .title-article {
+        margin-left: 1.5rem;
+    }
 
 
 }
