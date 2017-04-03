@@ -18,6 +18,8 @@ body {
   font-size: 16px;
   line-height: 24px;
   width: 100%;
+  overflow: auto;
+   overflow-x: hidden;
 }
 ul li{
     list-style: none;
@@ -39,7 +41,7 @@ body #btn-1,
 .slider-wrapper {
   margin: 0 auto;
   padding: 2.9rem 9%;
-  min-width: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: top center;
   -webkit-transition: background-image 0.5s ease;
@@ -142,11 +144,11 @@ body #btn-1,
   bottom: -6.8rem;
   right: -1.3rem;
 }
-#slide1 .price-element {
+#slide1 .price-element,
+#slide3 .price-element {
     background: url(../img/price.png) no-repeat center;
 }
-#slide2 .price-element,
-#slide3 .price-element {
+#slide2 .price-element {
     background-color: #52d05d;
     border-radius: 50%;
     color: #fff;
@@ -316,10 +318,18 @@ body #btn-1,
     font-weight: 600;
     margin: 0;
 }
+.wrapper-recipes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.recipe-photo-mobile {
+    display: none;
+}
 .recipes-wrap {
     display: flex;
     flex: 0 2 ;
-    margin-top: 2rem;
+    margin: 2rem;
     flex-wrap: wrap;
     flex-direction: column;
     background-color: @white;
@@ -406,7 +416,7 @@ body #btn-1,
     border-radius: 50%;
     color: #fff;
     font-weight: 600;
-    background-color: rgba(128, 128, 128, 0.41);
+    background-color:  rgba(128, 128, 128, 0.11);
     padding: 1.5rem 2rem;
 }
 .brand-logo:last-child {
@@ -444,7 +454,7 @@ body #btn-1,
     padding-bottom: 4rem;
     padding-right: 12rem;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 35px;
 }
 .registration-btn {
     background-color: transparent;
@@ -482,6 +492,10 @@ footer .container {
     width: 38rem;
     padding-top: 1.2rem;
     color: darkgrey;
+
+}
+.footer-menu .fa-angle-down {
+    display: none;
 }
 /*-----responsive-menu---------------*/
 .burger-menu {
@@ -744,13 +758,149 @@ footer .container {
     .number-recipes {
         font-size: 1.6rem;
         line-height: 3rem;
+        font-style: normal;
     }
     .title-article {
         margin-left: 1.5rem;
+        line-height: 3rem;
+    }
+    .recipe-photo-mobile {
+        display: block;
+    }
+    .recipes-photo {
+        display: none;
+    }
+    .wrapper-recipes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .recipes-wrap {
+        width: 100%;
+    }
+    .recipes-wrap:not(:first-child) {
+        display: none;
+    }
+    .recipes-price {
+        width: 130px;
+        height: 130px;
+        top: -95px;
+        right: 39px;
+        padding: 3rem 1rem;
+        font-size: 2.3rem
+    }
+    .wrap-description-recipe{
+        padding: 3rem 1.6rem;
+    }
+    .teg-recipes-type {
+        font-size: 1.3rem;
+        font-style: normal;
+    }
+    .recipes-title {
+        font-size: 1.75rem;
+        margin-top: 31px;
+        margin-bottom: 27px;
+    }
+    .time-cooking {
+        font-size: 1.5rem;
+    }
+    .assortment-link {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    .brand-logo {
+        width: 110px;
+        height: 110px;
+    }
+    .brand-logo:nth-child(4),
+    .brand-logo:nth-child(5),
+    .brand-logo:nth-child(6) {
+        display: none;
+    }
+    .brands {
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+    }
+    .card-registration .container {
+        flex-wrap: wrap;
+    }
+    .registration-wrap {
+        width: 90%;
+        align-items: center;
+    }
+    .registration-btn {
+        width: 90%;
+        order:3;
+    }
+    .card-wrap {
+        padding-bottom: 17rem;
+        padding-right: 25rem;
+        margin-top: 2rem;
+    }
+    .registration-annotation {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    footer .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-menu {
+        flex-direction: column;
+
+    }
+    .footer-contacts {
+        align-self: center;
+        width: 84%;
+    }
+    .footer-menu-link {
+        font-size: 1.5rem;
+    }
+    .sub-footer-link {
+        display: none;
+    }
+    .footer-menu-list3 {
+        order: -1;
+    }
+    .footer-menu ul {
+        position: relative;
+    }
+    .footer-menu ul::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #a0a0a0;
+        bottom: -14px;
+    }
+    .footer-menu .fa-angle-down {
+        display: block;
+        position: absolute;
+        color: #a0a0a0;
+        right: 10px;
+        cursor: pointer;
     }
 
 
 }
-@media screen and (max-width: 750px) {
-
+@media screen and (max-width: 540px) {
+    #slide1 .price-element,
+    #slide3 .price-element {
+            bottom: -24.8rem;
+    }
+    #slide2 .price-element {
+    bottom: -24rem;
+    right: 0.1rem;
+    }
+}
+@media screen and (max-width: 435px) {
+    .registration-title{
+        font-size: 2rem;
+        align-self: baseline;
+    }
+    .card-wrap {
+        width: 90%;
+    }
 }
