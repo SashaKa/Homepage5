@@ -142,11 +142,11 @@ body #btn-1,
   bottom: -6.8rem;
   right: -1.3rem;
 }
-#slide1 .price-element {
+#slide1 .price-element,
+#slide3 .price-element {
     background: url(../img/price.png) no-repeat center;
 }
-#slide2 .price-element,
-#slide3 .price-element {
+#slide2 .price-element{
     background-color: #52d05d;
     border-radius: 50%;
     color: #fff;
@@ -738,15 +738,27 @@ footer .container {
         padding-right: 1rem;
         font-size: 2.5rem;
     }
+    .recipes .container {
+        display: inline-block;
+    }
     .wrap-title {
-        width: 96%;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
     }
     .number-recipes {
         font-size: 1.6rem;
         line-height: 3rem;
+        float: right;
     }
     .title-article {
         margin-left: 1.5rem;
+        line-height: 3rem;
+        float: left;
+    }
+    .wrapper-recipes {
+        display: flex;
+        justify-content: space-around;
     }
 
 
