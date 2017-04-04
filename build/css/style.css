@@ -998,23 +998,36 @@ footer .container {
     padding-right: 1rem;
     font-size: 2.5rem;
   }
+  .recipes .container {
+    display: inline-block;
+  }
   .wrap-title {
-    width: 96%;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
   }
   .number-recipes {
     font-size: 1.6rem;
     line-height: 3rem;
+<<<<<<< HEAD
     font-style: normal;
+=======
+    float: right;
+>>>>>>> e559e545e724f620521e76aa8896c1b6d1c02462
   }
   .title-article {
     margin-left: 1.5rem;
     line-height: 3rem;
+<<<<<<< HEAD
   }
   .recipe-photo-mobile {
     display: block;
   }
   .recipes-photo {
     display: none;
+=======
+    float: left;
+>>>>>>> e559e545e724f620521e76aa8896c1b6d1c02462
   }
   .wrapper-recipes {
     display: -webkit-box;
@@ -1022,6 +1035,7 @@ footer .container {
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -1193,5 +1207,10 @@ footer .container {
   }
   .card-wrap {
     width: 90%;
+=======
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+>>>>>>> e559e545e724f620521e76aa8896c1b6d1c02462
   }
 }
