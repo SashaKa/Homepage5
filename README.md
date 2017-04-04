@@ -1,1 +1,1 @@
-# Homepage5
+Тестовое задание на позицию HTML верстальщик в ООО SoftFacade.  Для вёрстки использован Pixel Perfect.
